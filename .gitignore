@@ -4,20 +4,75 @@
 # Build output
 **/build/
 **/dist/
+.next/
+.out/
+.tmp/
+.cache/
 
 # Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 *.log
 
 # OS files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
 
-# Env files
+# Env files (keep secrets out of git)
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Editor configs
+# Editor / IDE settings
 .vscode/
 .idea/
+*.sublime-workspace
+*.sublime-project
 
-# Dependency lock files (optional)
+# Dependency lock files (optional, depending on team preference)
 yarn.lock
+pnpm-lock.yaml
+
+# Testing coverage
+coverage/
+.nyc_output/
+
+# Linting cache
+.eslintcache
+
+# Firebase / Vercel / Netlify / AWS artifacts (if used)
+.firebase/
+.firebaserc
+.vercel/
+.netlify/
+.aws/
+
+# Optional for macOS/Linux systems
+*.swp
+*.bak
+*~
+*.pid
+
+# TypeScript build
+*.tsbuildinfo
+
+# React Native / Expo (if relevant)
+.expo/
+.expo-shared/
+
+# Local databases / runtime files
+*.sqlite
+*.sqlite3
+*.db
+*.pid
+
+# Misc
+logs/
+temp/
+*.tgz
