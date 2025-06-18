@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Environment-based CORS
 app.use(cors({
-  origin: isProduction ? process.env.CLIENT_URL : 'http://localhost:3000',
+  origin: isProduction ? process.env.FRONTEND_URL : 'http://localhost:3000',
   credentials: true
 }));
 
@@ -46,7 +46,7 @@ const csrfProtection = csrf({
   cookie: {
     httpOnly: true,
     secure: isProduction,
-    sameSite: 'strict'
+    sameSite: 'None'
   }
 });
 
