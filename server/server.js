@@ -18,6 +18,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 // Secure HTTP headers
 app.use(helmet());
 
+app.set('trust proxy', 1);
+
+
 // Parse cookies and JSON
 app.use(cookieParser());
 app.use(express.json());
