@@ -6,7 +6,7 @@ AuthX is a secure, full-stack authentication system built with the **MERN** stac
 
 ## 🌐 Live Demo
 
-> [Coming Soon / Add your deployed link here]
+> [https://authx-frontend-uqbq.onrender.com]
 
 ---
 
